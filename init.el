@@ -29,6 +29,7 @@
 	clojure-mode
 	cider
 	rainbow-delimiters
+	fill-column-indicator
 
 	;; perhaps these in the future?
 	;; ido-completing-read+ - M-x autocompletion
@@ -88,6 +89,12 @@
 ;;;;
 ;; Package configs
 ;;;;
+
+;; fill-column-indicator
+(setq fci-rule-color "#454f5e")
+(setq fci-rule-width 2)
+(setq fci-rule-column 80)
+(add-hook 'clojure-mode-hook 'fci-mode)
 
 
 ;; Paredit
