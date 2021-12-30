@@ -91,7 +91,7 @@
 ;;;;
 
 ;; fill-column-indicator
-(setq fci-rule-color "#454f5e")
+(setq fci-rule-color "#2b313b")
 (setq fci-rule-width 2)
 (setq fci-rule-column 80)
 (add-hook 'clojure-mode-hook 'fci-mode)
