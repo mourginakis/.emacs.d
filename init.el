@@ -19,6 +19,11 @@
 ;; (load-file "./.emacs.d/motoko-init.el")
 
 
+;; Change location for backups to stop clutter
+(setq backup-directory-alist `(("." . "~/.emacs_saves")))
+(setq backup-by-copying t)
+
+
 ;; Load and activate emacs packages. Do this first so that the
 ;; packages are loaded before you start trying to modify them.
 ;; This also sets the load path.
